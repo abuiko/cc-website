@@ -10,6 +10,10 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
     <title>Coke Website</title>
   </head>
@@ -41,7 +45,19 @@
           </p>
           <a href="#">Learn More</a>
         </div>
-        <div class="imgSlide"></div>
+        <div class="imgSlide">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="/img/coke1.png" alt=""></div> 
+              <div class="swiper-slide"><img src="/img/coke2.png" alt=""></div> 
+              <div class="swiper-slide"><img src="/img/coke1.png" alt=""></div> 
+              <div class="swiper-slide"><img src="/img/coke2.png" alt=""></div> 
+              <div class="swiper-slide"><img src="/img/coke1.png" alt=""></div> 
+              <div class="swiper-slide"><img src="/img/coke2.png" alt=""></div> 
+              
+            </div>
+            
+        </div>
       </div>
       <ul class="icons">
         <li><i class="fab fa-instagram fa-2x"></i></li>
@@ -50,5 +66,25 @@
       </ul>
     </section>
     <script src="/app.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+            var swiper = new Swiper(".swiper-container", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true
+                },
+                pagination: {
+                    el: ".swiper-pagination"
+                },
+                loop: true,
+            });
+</script>
   </body>
 </html>
