@@ -21,3 +21,41 @@
     transform: translateX(0%);
   }
 }
+@media screen and (max-width: 802px) {
+  .nav-bar {
+    width: 100%;
+  }
+  .logo img {
+    max-width: 100px;
+  }
+  .content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .textBar {
+    text-align: center;
+  }
+  .textBar h2 {
+    font-size: 2em;
+  }
+  .textBar p {
+    font-size: 0.8em;
+  }
+  .swiper-slide {
+    width: 120px;
+    height: 200px;
+  }
+  .content .imgSlide {
+    img {
+      max-width: 60px;
+    }
+  }
+  .swiper-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .icons {
+    position: absolute;
+    bottom: 20px;
+  }
+}

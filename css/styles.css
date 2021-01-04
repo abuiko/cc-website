@@ -63,6 +63,7 @@ section .circle {
 header {
   position: absolute;
   top: 0;
+  right: 0;
   width: 100%;
   min-height: 10vh;
 }
@@ -79,7 +80,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  min-height: 10vh;
 }
 
 .navbar .nav-items {
@@ -109,14 +109,14 @@ header {
 }
 
 .content {
+  position: relative;
   min-height: 90vh;
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -150,7 +150,7 @@ header {
 
 .icons {
   position: absolute;
-  bottom: 50px;
+  bottom: 20px;
   max-width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,6 +243,48 @@ header {
   .active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+  }
+}
+
+@media screen and (max-width: 802px) {
+  .nav-bar {
+    width: 100%;
+  }
+  .logo img {
+    max-width: 100px;
+  }
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .textBar {
+    text-align: center;
+  }
+  .textBar h2 {
+    font-size: 2em;
+  }
+  .textBar p {
+    font-size: 0.8em;
+  }
+  .swiper-slide {
+    width: 120px;
+    height: 200px;
+  }
+  .content .imgSlide img {
+    max-width: 60px;
+  }
+  .swiper-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .icons {
+    position: absolute;
+    bottom: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

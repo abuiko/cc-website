@@ -21,6 +21,7 @@ section .circle {
 header {
   position: absolute;
   top: 0;
+  right: 0;
   width: 100%;
   min-height: 10vh;
 }
@@ -30,7 +31,6 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  min-height: 10vh;
 
   .nav-items {
     display: flex;
@@ -54,14 +54,16 @@ header {
   margin-bottom: 4px;
 }
 .content {
+  position: relative;
   min-height: 90vh;
   width: 90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: auto;
   .textBar {
     max-width: 600px;
+
     h2,
     p {
       color: #fff;
@@ -84,7 +86,7 @@ header {
 }
 .icons {
   position: absolute;
-  bottom: 50px;
+  bottom: 20px;
 
   max-width: 600px;
   display: flex;
