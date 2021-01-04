@@ -1,0 +1,27 @@
+:root {
+  --red-color: #e81d2b;
+  --black-color: #171617;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+h2 {
+  font-size: 3.6em;
+}
+p {
+  line-height: 25px;
+}
+i {
+  color: white;
+}
